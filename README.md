@@ -1,5 +1,8 @@
 # mkignore
-## Generate .gitignore from templates
+**Generate .gitignore from templates**
+
+### Installation
+`pip install mkignore`
 
 ### Usage
 ```shell script
