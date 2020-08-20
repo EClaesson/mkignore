@@ -11,8 +11,11 @@ positional arguments:
 
 optional arguments:
   -h, --help      show this help message and exit
+  
   -g, --generate  Generate .gitignore
+  
   -u, --update    Update available .gitignore templates
+  
   -l, --list      List available .gitignore templates`
   
 ### Example
