@@ -2,7 +2,8 @@
 ## Generate .gitignore from templates
 
 ### Usage
-`mkignore [-h] [-g, --generate] [-u, --update] [-l, --list] [TEMPLATES [TEMPLATES ...]]
+```shell script
+mkignore [-h] [-g, --generate] [-u, --update] [-l, --list] [TEMPLATES [TEMPLATES ...]]
 
 Generate .gitignore files
 
@@ -16,7 +17,8 @@ optional arguments:
   
   -u, --update    Update available .gitignore templates
   
-  -l, --list      List available .gitignore templates`
+  -l, --list      List available .gitignore templates
+```
   
 ### Example
 Generate a .gitignore for a C++ project in a JetBrains IDE.
