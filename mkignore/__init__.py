@@ -5,7 +5,7 @@ import pathlib
 import dload
 
 
-TEMPLATE_DATA_DIR = os.path.join(os.path.expanduser('~'), '')
+TEMPLATE_DATA_DIR = os.path.join(os.path.expanduser('~'), 'mkignore')
 MASTER_ZIP_URL = 'https://github.com/github/gitignore/archive/master.zip'
 
 
