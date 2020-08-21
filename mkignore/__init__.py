@@ -67,7 +67,9 @@ def main():
     if args.generate:
         print(generate_gitignore(args.templates))
     elif args.update:
+        print('Updating templates...')
         update_templates()
+        print('Successfully downloaded {} .gitignore files'.format(len(get_templates())))
     elif args.list:
         for template in get_templates():
             print(template['name'], end=' ')
