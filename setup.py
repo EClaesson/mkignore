@@ -7,7 +7,7 @@ with open("README.md", "r") as file:
 
 setuptools.setup(
     name="mkignore",
-    version="0.1.4",
+    version="0.1.5",
     author="Emanuel Claesson",
     author_email="emanuel.claesson@gmail.com",
     description="Generate .gitignore files from templates",
