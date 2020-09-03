@@ -1,5 +1,6 @@
 import argparse
 import os
+import sys
 import shutil
 import pathlib
 import dload
@@ -52,10 +53,15 @@ def generate_gitignore(templates):
     gitignore = '# Generated with mkignore - https://github.com/EClaesson/mkignore \n\n'
 
     for template in get_templates():
-        if template['name'].lower() in templates:
+        name = template['name'].lower()
+
+        if name in templates:
             gitignore += '##### ' + template['name'] + ' ' + ('#' * (40 - len(template['name']))) + '\n'
             gitignore += open(template['path'], 'r').read()
             gitignore += '\n\n'
+        else:
+            print(f'Error: Invalid template "{name}"')
+            sys.exit(1)
 
     return gitignore
 
